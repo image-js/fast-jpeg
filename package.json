@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/image-js/jpeg-js#readme",
   "dependencies": {
-    "iobuffer": "^2.1.0"
+    "iobuffer": "^2.1.0",
+    "tiff": "^2.0.0"
   }
 }
