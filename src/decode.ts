@@ -1,22 +1,11 @@
 import { IOBuffer } from 'iobuffer';
 import { decode as decodeTIFF } from 'tiff';
-import TiffIfd from 'tiff/lib/tiffIfd';
-import { BufferType } from 'tiff/lib/types';
 
-export interface IFD {
-  size: number;
-  width: number;
-  height: number;
-  bitsPerSample: number;
-  alpha: boolean;
-  xResolution: number;
-  yResolution: number;
-  resolutionUnit: number;
-}
-
-export function decode(data: BufferType) {
+export function decode(
+  data: NonNullable<ConstructorParameters<typeof IOBuffer>[0]>,
+) {
   const buffer = new IOBuffer(data);
-  const result: { exif?: TiffIfd[] } = {};
+  const result: { exif?: ReturnType<typeof decodeTIFF> } = {};
   buffer.setBigEndian();
   const val = buffer.readUint16();
   if (val !== 0xffd8) {
@@ -34,7 +23,7 @@ export function decode(data: BufferType) {
       header[4] === 0 &&
       header[5] === 0
     ) {
-      const exif = decodeTIFF(
+      result.exif = decodeTIFF(
         new Uint8Array(
           buffer.buffer,
           buffer.byteOffset + 12,
@@ -45,7 +34,6 @@ export function decode(data: BufferType) {
           ignoreImageData: true,
         },
       );
-      result.exif = exif;
     }
   }
   return result;

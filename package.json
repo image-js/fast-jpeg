@@ -6,7 +6,9 @@
   "module": "lib-esm/index.js",
   "types": "lib/index.d.ts",
   "files": [
-    "src"
+    "src",
+    "lib-esm",
+    "lib"
   ],
   "scripts": {
     "check-types": "tsc --noEmit",
@@ -30,9 +32,9 @@
   "author": "Michaël Zasso",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/image-js/jpeg-js/issues"
+    "url": "https://github.com/image-js/fast-jpeg/issues"
   },
-  "homepage": "https://github.com/image-js/jpeg-js#readme",
+  "homepage": "https://github.com/image-js/fast-jpeg#readme",
   "dependencies": {
     "iobuffer": "^5.3.2",
     "tiff": "^5.0.3"
