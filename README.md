@@ -1,4 +1,4 @@
-# jpeg-js
+# fast-jpeg
 
   [![NPM version][npm-image]][npm-url]
   [![npm download][download-image]][download-url]
