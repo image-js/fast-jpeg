@@ -30,7 +30,7 @@ export function decode(
           buffer.byteLength - 12,
         ),
         {
-          onlyFirst: true,
+          pages: [0],
           ignoreImageData: true,
         },
       );
