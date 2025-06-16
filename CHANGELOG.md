@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.0.0](https://github.com/image-js/fast-jpeg/compare/v2.0.1...v3.0.0) (2025-06-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* migrate to ESM ([#4](https://github.com/image-js/fast-jpeg/issues/4))
+
+### Code Refactoring
+
+* migrate to ESM ([#4](https://github.com/image-js/fast-jpeg/issues/4)) ([4d830b9](https://github.com/image-js/fast-jpeg/commit/4d830b934cce8a36554240684428ef4ec8d58d19))
+
 ## [2.0.1](https://github.com/image-js/fast-jpeg/compare/v2.0.0...v2.0.1) (2024-04-11)
 
 
