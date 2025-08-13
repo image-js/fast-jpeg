@@ -19,7 +19,7 @@ JPEG image decoder written entirely in JavaScript.
 ## Installation
 
 ```
-$ npm install fast-jpeg
+npm install fast-jpeg
 ```
 
 ## API
