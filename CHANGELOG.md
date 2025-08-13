@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.1](https://github.com/image-js/fast-jpeg/compare/v3.0.0...v3.0.1) (2025-08-13)
+
+
+### Bug Fixes
+
+* exports ([#6](https://github.com/image-js/fast-jpeg/issues/6)) ([c0b41f0](https://github.com/image-js/fast-jpeg/commit/c0b41f094f21a5ed159f6f530a2f73fe5c86e639))
+
 ## [3.0.0](https://github.com/image-js/fast-jpeg/compare/v2.0.1...v3.0.0) (2025-06-16)
 
 

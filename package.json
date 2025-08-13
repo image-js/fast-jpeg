@@ -1,6 +1,6 @@
 {
   "name": "fast-jpeg",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "license": "MIT",
   "description": "JPEG image decoder written entirely in JavaScript",
   "keywords": [],
