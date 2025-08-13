@@ -13,6 +13,7 @@ test('should extract exif', () => {
   const result = decode(readImage('sample.jpg'));
 
   const { exif } = result;
+
   expect(exif).toHaveLength(1);
   expect(exif?.[0]?.fields.size).toBe(12);
   expect(exif?.[0]?.fields.get(271)).toBe('SONY');
